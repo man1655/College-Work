@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Shop</title>
+    <style>
+        hr {
+            height: 15px;
+        }
+        table {
+            background-color: pink;
+        }
+        fieldset {
+            background-color: aqua;
+            border: 3px solid black;
+        }
+        #ta {
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <hr color="orange">
+    <h1 align="center"><font color="blue">Pizza Shop 2.0</font></h1>
+    <hr color="green">
+    <form>
+        <fieldset>
+            <legend><b>Customer Details</b></legend>
+            <table align="center" width="50%">
+                <tr height="10%">
+                    <td><b>Name:</b></td>
+                    <td><input type="text" placeholder="Enter Your Name" required></td>
+                </tr>
+                <tr height="10%">
+                    <td><b>Mobile No:</b></td>
+                    <td><input type="tel" placeholder="Enter Your Mobile No" pattern="[0-9]{10}" required></td>
+                </tr>
+                <tr height="20%">
+                    <td><b>Address:</b></td>
+                    <td><textarea rows="5" placeholder="Enter Your Address" required></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend><b>Pizza Topping Details</b></legend>
+            <table id="ta" align="center" width="50%">
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox">Supreme</td>
+                    <td>Qt.<input type="number" min="1"></td>
+                </tr>
+                <tr>
+                    <td><b>Pizza Type:</b></td>
+                    <td><input type="checkbox">Vegetarian</td>
+                    <td>Qt.<input type="number" min="1"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="checkbox">Farmville</td>
+                    <td>Qt.<input type="number" min="1"></td>
+                </tr>
+                <tr>
+                    <td><b>Pizza Size:</b></td>
+                    <td><input type="radio" name="size" required>Small</td>
+                    <td><input type="radio" name="size">Medium</td>
+                    <td><input type="radio" name="size">Large</td>
+                </tr>
+                <tr>
+                    <td><b>Pizza Sauce:</b></td>
+                    <td>
+                        <select required>
+                            <optgroup label="Select Type">
+                                <option value="tomato">Tomato</option>
+                                <option value="chilly">Chilly</option>
+                                <option value="bbq">BBQ</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Extra Topping:</b></td>
+                    <td colspan="3">
+                        <table style="background-color: rgba(231, 40, 136, 0.37);">
+                            <tr>
+                                <td><input type="checkbox">Cheese</td>
+                                <td><input type="checkbox">Extra Veg</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox">Roasted Broccoli</td>
+                                <td><input type="checkbox">Black Olives</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <br>
+                    <td align="center" colspan="4"><b>Delivery Instruction</b></td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <textarea rows="5" cols="60"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="4">
+                        <input type="submit" value="Send My Order">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
