@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Review</title>
+    <style>
+        hr{
+        height: 5px;
+        }
+    </style>
+</head>
+<body>
+    <hr color="orange" height="10px">
+    <h1 align="center"><font color="Blue">Food Review</font></h1>
+    <hr color="green" height="4px">
+    
+    <fieldset width="300px">
+        <legend>Customer Details</legend>
+        <table align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Enter your Name"></td>
+            </tr>
+            <tr>
+                <td>Number:</td>
+                <td><input type="len" placeholder="Enter your Number"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Pizza Name:</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td> <input type="checkbox">Simple veg.</tr></td>
+                            <td><input type="checkbox">7 cheeze</td>
+                           
+                        
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Outlet City:</td>
+                <td>
+                    <select>
+                        <optgroup label="--List of Area">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">2</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Order Date:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Comment:</td>
+                <td><textarea rows="5" cols="5"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset width="50%">
+        <legend>Select Order Pizza:</legend>
+        <table rules="all" align="center">
+            <tr>
+                <td>Scale</td>
+                <td>Good</td>
+                <td>Avg</td>
+                <td>Bad</td>
+            </tr>
+            <tr>
+                <td>Quality</td>
+                <td><input type="radio" name="" checked></td>
+                <td><input type="radio" name=""></td>
+                <td><input type="radio" name=""></td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td><input type="radio" name="1" checked></td>
+                <td><input type="radio" name="1"></td>
+                <td><input type="radio" name="1"></td>
+            </tr>
+            <tr>
+                <td>Fressness</td>
+                <td><input type="radio" name="2"></td>
+                <td><input type="radio" name="2" checked></td>
+                <td><input type="radio" name="2"></td>
+            </tr>
+            <tr>
+                <td>OverAll Rating</td>
+                <td colspan="3">
+                    0<input type="range" min="0" max="10">10
+                </td>
+            </tr>
+        </table>
+    <p align="center">
+        <input align="center" type="submit" value="Submit"></p>
+    </fieldset>
+
+</body>
+</html>
